@@ -8,15 +8,6 @@ pipeline {
     }
 
     stages {
-        stage('Pull from GitHub') {
-            steps {
-                script {
-                    // Clone the repository
-                    git 'https://github.com/vyiatta/jenkinsfile.git'
-                }
-            }
-        }
-
         stage('Update System') {
             steps {
                 script {
